@@ -1,0 +1,96 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #eee;
+
+    header {
+        background-color: #161616;
+        width: 100%;
+        text-align: center;
+        padding: 3em;
+
+        h1 {
+            color: #fff000;
+            text-transform: capitalize;
+            letter-spacing: .1em;
+            font-size: 3em;
+            font-family: sans-serif;
+
+            @media(max-width: 768px){
+                font-size: 2.5em;
+            }
+        }
+    }
+
+    section {
+        background-color: #e7d803;
+        padding: 2em;
+        text-align: center;
+        font-family: sans-serif;
+
+
+        h3 {
+            margin: 1em auto;
+            font-size: 1.8em;
+            color: #000;
+        }
+
+        p {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    main {
+        background-color: skyblue;
+        padding: 4em 2em;
+        display: grid;
+        align-items: center;
+        gap: 1.5em;
+        grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
+        article {
+            border: 1px solid red;
+            background-color: orange;
+            height: 350px;
+            position: relative;
+            
+            .project-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                background-color: blue;
+                height: 100%;
+                
+                h4 {
+                    font-size: 2em;
+                    background-color: green;
+                    width: 100%;
+                    text-align: center;
+                    padding: .4em;
+                }
+                
+                a {
+                    background-color: red;
+                    width: 100%;
+                    overflow: hidden;
+                }
+
+                img {
+                    width: 100%;
+
+                }
+                &:hover {
+                    img {
+                        transition: .2s ease;
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+    }
+}
