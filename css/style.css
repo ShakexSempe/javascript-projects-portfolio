@@ -120,20 +120,24 @@ body {
           height: 100%;
           object-fit: cover;
           transition: .2s ease; }
-        body main article .project-item:hover a::after {
-          transition: .5s ease;
-          opacity: 0; }
-        body main article .project-item:hover img {
-          transition: .2s ease;
-          transform: scale(1.05); }
-        body main article .project-item:hover h4 {
-          transition: .3s ease;
-          letter-spacing: .1em;
-          transform: translateY(0.5em);
-          margin-bottom: 1em;
-          background: #000;
-          color: #fff000;
-          box-shadow: inset -3px -3px 5px rgba(0, 0, 0, 0.356), inset 3px 3px 5px #ddda; }
+        body main article .project-item:hover {
+          transition: .4s ease;
+          transform: scale(1.04);
+          box-shadow: 5px 5px 5px #000; }
+          body main article .project-item:hover a::after {
+            transition: .5s ease;
+            opacity: 0; }
+          body main article .project-item:hover img {
+            transition: .2s ease;
+            transform: scale(1.05); }
+          body main article .project-item:hover h4 {
+            transition: .3s ease;
+            letter-spacing: .1em;
+            transform: translateY(0.5em);
+            margin-bottom: 1em;
+            background: #000;
+            color: #fff000;
+            box-shadow: inset -3px -3px 5px rgba(0, 0, 0, 0.356), inset 3px 3px 5px #ddda; }
   body footer {
     padding: .5em;
     font-size: 1.2em;

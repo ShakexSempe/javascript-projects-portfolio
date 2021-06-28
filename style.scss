@@ -161,6 +161,9 @@ body {
                 }
 
                 &:hover {
+                    transition: .4s ease;
+                    transform: scale(1.04);
+                    box-shadow: 5px 5px 5px #000;
                     a {
                         &::after {
                             transition: .5s ease;
