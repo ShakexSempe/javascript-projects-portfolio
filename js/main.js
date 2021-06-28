@@ -13,7 +13,7 @@ const projects = [
     },
     {
         id: 3,
-        title: "shopping list/",
+        title: "shopping list",
         link: "https://shakexsempe.github.io/JS-shopping-list/",
         img: "./img/grocery.bmp",
     },
