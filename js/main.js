@@ -57,3 +57,6 @@ displayProjects = (projectsItems) => {
     console.log(displayProject);
     main.innerHTML = displayProject;
 }
+
+const date = document.getElementById('date');
+date.innerHTML = new Date().getFullYear();

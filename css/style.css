@@ -69,3 +69,9 @@ body {
         body main article .project-item:hover img {
           transition: .2s ease;
           transform: scale(1.05); }
+  body footer {
+    padding: .5em;
+    font-size: 1.2em;
+    color: #141414;
+    text-transform: capitalize;
+    text-align: center; }
