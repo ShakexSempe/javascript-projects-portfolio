@@ -50,7 +50,7 @@ body {
       padding: .4em 1em;
       font-weight: 600;
       border-radius: 5px;
-      box-shadow: 0 0 5px #000a, inset -4px -4px 5px #000, inset 4px 4px 5px #ddda;
+      box-shadow: 0 0 5px #000a, inset -3px -3px 5px #000, inset 4px 4px 5px #ddda;
       transition: .2s ease; }
       body section a:hover {
         transition: .2s ease;
