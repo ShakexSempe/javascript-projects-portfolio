@@ -52,6 +52,9 @@ body {
             margin-bottom: 1em;
             border-radius: 5px;
             text-transform: capitalize;
+            box-shadow: inset 4px 4px 10px rgba(233, 231, 127, 0.445),
+                        inset -4px -4px 10px rgba(0, 0, 0, 0.667),
+                        10px 10px 10px #000a;
         }
 
         a {
