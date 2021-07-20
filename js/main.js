@@ -35,6 +35,12 @@ const projects = [
         link: "https://shakexsempe.github.io/menu-js/",
         img: "./img/menu.bmp",
     },
+    {
+        id: 7,
+        title: "reviews",
+        link: "https://shakexsempe.github.io/reviews-js/",
+        img: "./img/reviews.bmp",
+    }
 ];
 
 const main = document.getElementById('container');
