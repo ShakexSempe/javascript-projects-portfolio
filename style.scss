@@ -68,7 +68,7 @@ body {
         text-align: center;
 
 
-        h3 {
+        h2 {
             // margin: 1em 5vw;
             font-size: 1.8em;
             width: 100%;
@@ -107,7 +107,7 @@ body {
             }
         }
         @media (max-width: 500px) {
-            h3 {
+            h2 {
                 font-size: 1.4em;
                 padding: .5em .5em;
                 width: 100%;
@@ -145,7 +145,7 @@ body {
                 cursor: pointer;
                 overflow: hidden;
                 
-                h4 {
+                h2 {
                     @media(max-width: 768px){
                         font-size: 1.3em;
                     }
@@ -206,7 +206,7 @@ body {
                         transition: .2s ease;
                         transform: scale(1.05);
                     }
-                    h4 {
+                    h2 {
                         transition: .3s ease;
                         letter-spacing: .1em;
                         transform: translateY(.5em);

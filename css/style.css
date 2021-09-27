@@ -42,7 +42,7 @@ body {
     @media (min-width: 1025px) {
       body section {
         background-position: right; } }
-    body section h3 {
+    body section h2 {
       font-size: 1.8em;
       width: 100%;
       font-weight: 700;
@@ -69,7 +69,7 @@ body {
         transform: scale(0.97);
         box-shadow: 0 0 10px #000a, inset -2px -2px 5px #000, inset 2px 2px 5px #ddda; }
     @media (max-width: 500px) {
-      body section h3 {
+      body section h2 {
         font-size: 1.4em;
         padding: .5em .5em;
         width: 100%; }
@@ -100,7 +100,7 @@ body {
         transition: .4s ease;
         cursor: pointer;
         overflow: hidden; }
-        body main article .project-item h4 {
+        body main article .project-item h2 {
           font-size: 1.6em;
           text-align: center;
           padding: .4em;
@@ -113,7 +113,7 @@ body {
           width: 100%;
           box-shadow: inset -3px -3px 5px #ddda, inset 3px 3px 5px #000a; }
           @media (max-width: 768px) {
-            body main article .project-item h4 {
+            body main article .project-item h2 {
               font-size: 1.3em; } }
         body main article .project-item a {
           background-color: #ddd;
@@ -144,7 +144,7 @@ body {
           body main article .project-item:hover img {
             transition: .2s ease;
             transform: scale(1.05); }
-          body main article .project-item:hover h4 {
+          body main article .project-item:hover h2 {
             transition: .3s ease;
             letter-spacing: .1em;
             transform: translateY(0.5em);
