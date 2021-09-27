@@ -10,8 +10,11 @@ body {
     background-color: #f4f4f4;
     font-family: $font-gruppo;
     width: 100vw;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     header {
+        @media (max-width: 768px) {
+            height: 30vh;
+        }
         background-color: #161616;
         width: 100%;
         text-align: center;
@@ -36,20 +39,43 @@ body {
     }
 
     section {
-        background-color: #e7d803;
-        padding: 2em;
+        height: 70vh;
+        width: 100vw;
+        background-image: url(../img/js.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom left;
+        // figure {
+        //     height: 50%;
+        //     width: 50%;
+        //     overflow: hidden;
+
+        //     img {
+        //         height: 100%;
+        //         width: 100%;
+
+        //     }
+        // }
+        @media (min-width: 1025px){
+        background-position: right;
+        }
+        @media (max-width: 768px) {
+        }
+        background-color: #F7E018;
+        // background-color: #000;
+        // background-image: url(/img/js.png);
+        padding: 5vh 5vw;
         text-align: center;
 
 
         h3 {
-            margin: 1em auto;
+            // margin: 1em 5vw;
             font-size: 1.8em;
-            width: 50vw;
+            width: 100%;
             font-weight: 700;
             color: #fff000;
             background: #141414;
             padding: .3em 1em;
-            margin-bottom: 1em;
             border-radius: 5px;
             text-transform: capitalize;
             box-shadow: inset 4px 4px 10px rgba(233, 231, 127, 0.445),
@@ -64,6 +90,7 @@ body {
             font-size: 1.2em;
             color: #000;
             padding: .4em 1em;
+            margin: 5vh auto;
             font-weight: 600;
             border-radius: 5px;
             box-shadow: 0 0 5px #000a,
