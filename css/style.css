@@ -7,7 +7,8 @@
 body {
   background-color: #f4f4f4;
   font-family: "Gruppo", cursive;
-  width: 100vw; }
+  width: 100vw;
+  overflow-x: hidden; }
   body header {
     background-color: #161616;
     width: 100%;

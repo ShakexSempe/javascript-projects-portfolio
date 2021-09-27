@@ -10,7 +10,7 @@ body {
     background-color: #f4f4f4;
     font-family: $font-gruppo;
     width: 100vw;
-    // overflow-x: hidden;
+    overflow-x: hidden;
     header {
         @media (max-width: 768px) {
             height: 30vh;
