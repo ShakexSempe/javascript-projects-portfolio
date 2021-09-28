@@ -40,6 +40,12 @@ const projects = [
         title: "reviews",
         link: "https://shakexsempe.github.io/reviews-js/",
         img: "./img/reviews.bmp",
+    },
+    {
+        id: 8,
+        title: "grocery app",
+        link: "https://shakexsempe.github.io/JS-shopping-list/",
+        img: "./img/shopping-list.png",
     }
 ];
 
@@ -55,12 +61,12 @@ displayProjects = (projectsItems) => {
                     <div class="project-item">
                         <h2>${project.title}</h2>
                         <a href=${project.link} target="_blank">
-                            <img src=${project.img} alt=""></a>
+                            <img src=${project.img} alt="img" loading="lazy"></a>
                     </div>
                 </article>`
     });
     displayProject = displayProject.join("");
-    console.log(displayProject);
+    // console.log(displayProject);
     main.innerHTML = displayProject;
 }
 
