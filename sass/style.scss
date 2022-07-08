@@ -238,3 +238,29 @@ body {
         }
     }
 }
+
+.loader_bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index: 99;
+    display: grid;
+    place-items: center;
+
+    .loader {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        border: .2rem solid #111;
+        border-top: .2rem solid #fff000;
+        position: relative;
+        animation: rotate 1.5s linear infinite;
+
+        @keyframes rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
