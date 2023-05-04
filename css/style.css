@@ -30,8 +30,15 @@ body {
   width: 100%;
   height: 100%;
   background: url("../img/sergi-kabrera-2xU7rYxsTiM-unsplash.jpg");
+  background-repeat: no-repeat;
   mix-blend-mode: overlay;
+  background-size: cover;
   z-index: -1;
+}
+@media (min-width: 820px) {
+  .hero::after {
+    background-attachment: fixed;
+  }
 }
 .hero h1 {
   margin-bottom: 1rem;
