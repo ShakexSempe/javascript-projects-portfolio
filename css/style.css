@@ -17,8 +17,6 @@ body {
   background: rgba(0, 0, 0, 0.9);
   color: #fff;
   height: 90vh;
-  display: grid;
-  place-content: center;
   position: relative;
   isolation: isolate;
 }
@@ -46,10 +44,19 @@ body {
     background-position: center;
   }
 }
+.hero .hero-title {
+  position: relative;
+  top: 20vh;
+}
 .hero h1 {
   margin-bottom: 1rem;
   color: yellow;
+  font-size: 1.8rem;
 }
+.hero h2 {
+  font-size: 1.4rem;
+}
+
 main {
   background-color: #4d4d4d;
   background-color: #0d0d0d;

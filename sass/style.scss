@@ -17,9 +17,9 @@ body {
     background: hsla(0, 0%, 0%, .9);
     color: #fff;
     height: 90vh;
-    display: grid;
-    // place-items: center;
-    place-content: center;
+    // display: grid;
+    // place-content: center;
+    // justify-content: start;
     position: relative;
     isolation: isolate;
     &::after {
@@ -44,15 +44,19 @@ body {
             background-position: center;
         }
     }
-
+    .hero-title {
+        position: relative;
+        top: 20vh;
+    }
     h1 {
+        // margin: 1rem auto;
         margin-bottom: 1rem;
         color: yellow;
-        // font-size: 3rem;
+        font-size: 1.8rem;
     }
 
     h2 {
-        // font-size: 1rem;
+        font-size: 1.4rem;
     }
 }
 
