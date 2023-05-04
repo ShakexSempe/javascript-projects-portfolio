@@ -13,13 +13,13 @@ body {
 
 .hero {
     // border: 2px solid red;
-    padding: 5vh 5vw;
+    padding: 15vh 5vw 5vh;
     background: hsla(0, 0%, 0%, .8);
     color: #fff;
-    height: 70vh;
-    display: grid;
-    place-items: center;
-    place-content: center;
+    height: 90vh;
+    // display: grid;
+    // place-items: center;
+    // place-content: center;
     position: relative;
     isolation: isolate;
     &::after {
@@ -42,6 +42,7 @@ body {
     h1 {
         margin-bottom: 1rem;
         color: yellow;
+        font-size: 3rem;
     }
 
     h2 {

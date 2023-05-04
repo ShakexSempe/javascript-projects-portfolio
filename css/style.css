@@ -12,13 +12,10 @@ body {
 }
 
 .hero {
-  padding: 5vh 5vw;
+  padding: 15vh 5vw 5vh;
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
-  height: 70vh;
-  display: grid;
-  place-items: center;
-  place-content: center;
+  height: 90vh;
   position: relative;
   isolation: isolate;
 }
@@ -43,6 +40,7 @@ body {
 .hero h1 {
   margin-bottom: 1rem;
   color: yellow;
+  font-size: 3rem;
 }
 main {
   background-color: #fafafa;
