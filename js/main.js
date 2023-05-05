@@ -59,10 +59,11 @@ displayProjects = (projectsItems) => {
     let displayProject = projectsItems.map( project => {
         return `<article class="project-container">
                     <div class="project-item">
-                    <img src=${project.img} alt="img" loading="lazy"></img>
                     <h2>${project.title}</h2>
-                        
                     <a href=${project.link} target="_blank">view project<i class="fas fa-angles-right"></i></a>
+                    <figure>
+                        <img src=${project.img} alt="img" loading="lazy"></img>
+                    </figure>
                     </div>
                 </article>`
     });
