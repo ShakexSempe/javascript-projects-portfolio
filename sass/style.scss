@@ -126,6 +126,7 @@ main {
             text-decoration: none;
             border-radius: .25rem;
             transition: .25s;
+            font-size: 1rem;
 
             i {
                 color: yellow;
@@ -178,10 +179,11 @@ main {
                     // width: 100%;
                     // height: 60%;
                     // object-position: top;
+                box-shadow: 0rem .5rem 1rem hsla(0, 0%, 0%, .3);
                 }
             }
             @media (min-width: 768px){
-                    height: 40vh;
+                    height: 30vh;
                     img {
                         transform: rotate(0);
                     }
@@ -201,11 +203,12 @@ main {
 
             }
             @media (min-width: 768px){
-                // height: 60vh;
                 figure {
                     height: 30vh;
+                    height: 40vh;
                     img {
                         // transform: rotate(0deg) scale(1.15);
+                    box-shadow: 0rem .5rem .5rem hsla(60, 100%, 50%, .15);
                     }
                 }
             }

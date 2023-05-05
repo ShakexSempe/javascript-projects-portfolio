@@ -112,6 +112,7 @@ main {
   text-decoration: none;
   border-radius: 0.25rem;
   transition: 0.25s;
+  font-size: 1rem;
 }
 .project-container .project-item a i {
   color: yellow;
@@ -155,8 +156,13 @@ main {
   box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.5);
 }
 @media (min-width: 768px) {
+  .project-container .project-item figure img {
+    box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  }
+}
+@media (min-width: 768px) {
   .project-container .project-item figure {
-    height: 40vh;
+    height: 30vh;
   }
   .project-container .project-item figure img {
     transform: rotate(0);
@@ -176,6 +182,10 @@ main {
 @media (min-width: 768px) {
   .project-container .project-item:hover figure {
     height: 30vh;
+    height: 40vh;
+  }
+  .project-container .project-item:hover figure img {
+    box-shadow: 0rem 0.5rem 0.5rem rgba(255, 255, 0, 0.15);
   }
 }
 
