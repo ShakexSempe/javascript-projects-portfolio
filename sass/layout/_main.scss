@@ -1,0 +1,29 @@
+main {
+    background-color: hsla(0, 0%, 5%);
+    padding: 10vh 5vw;
+    display: grid;
+    align-items: center;
+    gap: 10vh;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+    @media (min-width: 768px) {
+        gap: 2rem;
+        row-gap: 20vh;
+    }
+}
+
+footer {
+    padding: 5vh 0;
+    font-size: 1.125rem;
+    font-size: clamp(1rem, 1.25vw, 1.125rem);
+    color: #fff;
+    background-color: #000;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+
+    a {
+        color: #fff000;
+        text-decoration: none;
+    }
+}

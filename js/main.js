@@ -49,7 +49,7 @@ const projects = [
     }
 ];
 
-const main = document.getElementById('container');
+const main = document.getElementById('main');
 
 window.addEventListener('DOMContentLoaded', () => {
     displayProjects(projects);
