@@ -1,24 +1,18 @@
 @use '../abstracts/variables';
 
 .project-container {
-    background-color: orange;
-    // border: 2px solid blue;
     border-radius: 10px;
-    // height: 350px;
     position: relative;
 
     .project-item {
-        // border: 3px solid red;
         width: 100%;
         height: auto;
         background: hsl(0, 0%, 10%);
         padding: 1rem;
-        // border-bottom: 4px solid yellow;
-        // text-align: center;
         border-radius: .25rem;
-        // box-shadow: 0 .5rem .5rem #0004;
-        // box-shadow: 0 .5rem .65rem hsla(60, 100%, 50%, .05);
+        box-shadow: 0 .5rem 1rem #000;
         transition: .25s;
+        margin-block: auto;
 
         @media (min-width: 768px) {
             height: 60vh;
@@ -67,41 +61,20 @@
         }
 
         figure {
-            // border: 2px solid yellow;
-            height: 0;
             height: 50vh;
             transition: .5s;
             position: relative;
-            // overflow: hidden;
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: yellow;
-                opacity: 0;
-                border-radius: .25rem;
-                transition: .5s;
-            }
             img {
                 // border: 1px solid hsl(56, 100%, 80%);
                 width: 100%;
-                // height: 200px;
                 height: 100%;
-                object-fit: contain;
                 object-fit: cover;
                 border-radius: .25rem;
                 transition: .5s;
-                transform: rotate(-10deg) scale(.8);
+                transform: rotate(-5deg) scale(.8);
                 box-shadow: 0rem 1rem 1rem hsla(60, 100%, 50%, .2);
                 box-shadow: 0rem 1rem 1rem hsla(0, 0%, 0%, .5);
                 @media (min-width: 768px) {
-                    // object-fit: cover;
-                    // width: 100%;
-                    // height: 60%;
-                    // object-position: top;
                 box-shadow: 0rem .5rem 1rem hsla(0, 0%, 0%, .3);
                 }
             }
@@ -116,24 +89,11 @@
         &:hover {
             background: hsl(0, 0%, 20%);
             figure {
-                // height: 50vh;
-                &::before {opacity: 0;}
                 img {
                     transform: rotate(0deg) scale(.95);
-                    box-shadow: 0rem .5rem .25rem hsla(60, 100%, 50%, .3);
                     box-shadow: 0rem .5rem .25rem hsla(0, 0, 0, .3);
                 }
 
-            }
-            @media (min-width: 768px){
-                figure {
-                    height: 30vh;
-                    height: 40vh;
-                    img {
-                        // transform: rotate(0deg) scale(1.15);
-                    box-shadow: 0rem .5rem .5rem hsla(60, 100%, 50%, .15);
-                    }
-                }
             }
         }
     }

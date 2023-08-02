@@ -1,10 +1,13 @@
+@use '../abstracts/variables';
+
+// MAIN = PROJECTS GRID CONTAINER
 main {
     background-color: hsla(0, 0%, 5%);
     padding: 10vh 5vw;
     display: grid;
-    align-items: center;
+    place-items: center;
     gap: 10vh;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
     @media (min-width: 768px) {
         gap: 2rem;
@@ -23,7 +26,7 @@ footer {
     text-align: center;
 
     a {
-        color: #fff000;
+        color: variables.$brand;
         text-decoration: none;
     }
 }
