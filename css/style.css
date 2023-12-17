@@ -161,10 +161,10 @@ footer a {
   transition: 250ms;
 }
 .project-container .project-item::before {
-  background: #333;
+  background: radial-gradient(#000, #333);
 }
 .project-container .project-item::after {
-  background: yellow;
+  background: radial-gradient(#cccc00, yellow);
   z-index: -2;
 }
 @keyframes card-hover {

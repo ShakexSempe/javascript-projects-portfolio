@@ -26,10 +26,10 @@
         }
 
         &::before {
-            background: #333;
+            background: radial-gradient(#000, #333);
         }
         &::after {
-            background: yellow;
+            background: radial-gradient(hsl(60, 100%, 40%), hsl(60, 100%, 50%));
             z-index: -2;
         }
 
