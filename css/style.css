@@ -32,27 +32,54 @@ body {
   top: 20vh;
   text-transform: capitalize;
 }
-.hero-title h1 {
+.hero-title .title {
+  padding-bottom: 1rem;
   margin-bottom: 1rem;
+  position: relative;
+  overflow-x: hidden;
+}
+.hero-title .title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #fff000, transparent);
+  opacity: 0.5;
+  animation: title-bar 2s infinite linear;
+  z-index: 100;
+}
+@keyframes title-bar {
+  0% {
+    transform: translateX(-100%);
+    background: linear-gradient(90deg, transparent, #fff, transparent);
+  }
+  100% {
+    transform: translateX(100%);
+    background: linear-gradient(90deg, transparent, #fff000, transparent);
+  }
+}
+.hero-title .title h1 {
+  margin-bottom: 0.5rem;
   color: yellow;
   font-size: 2rem;
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
 }
-.hero-title h2 {
-  font-size: 1.2rem;
+.hero-title .title h2 {
+  font-size: 1.25rem;
   font-size: clamp(1.2rem, 2vw, 1.5rem);
-  margin-bottom: 2rem;
 }
-.hero-title p {
+.hero-title .hero-cta p {
   color: #f4f4f4;
   line-height: 1.6;
   font-size: clamp(1rem, 1.25vw, 1.025rem);
 }
-.hero-title a {
+.hero-title .hero-cta a {
   display: block;
   width: max-content;
-  margin: 1rem 0;
-  padding: 0.5rem 1rem;
+  margin: 1rem 0 0;
+  padding: 0.5rem;
   background: yellow;
   color: #000;
   text-decoration: none;
@@ -61,7 +88,7 @@ body {
   transition: 0.125s ease;
   box-shadow: 0.125rem 0.25rem 0.5rem #0006;
 }
-.hero-title a:hover {
+.hero-title .hero-cta a:hover {
   transform: scale(0.98);
   box-shadow: 0.125rem 0.25rem 0.25rem #000;
 }
