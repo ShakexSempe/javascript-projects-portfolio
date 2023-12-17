@@ -242,7 +242,7 @@ footer a {
   }
 }
 .project-container .project-item:hover {
-  animation: card-hover 350ms;
+  animation: card-hover 350ms ease-in-out;
 }
 .project-container .project-item:hover::before {
   opacity: 0;

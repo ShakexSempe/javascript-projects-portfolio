@@ -125,7 +125,7 @@
         }
 
         &:hover {
-            animation: card-hover 350ms;
+            animation: card-hover 350ms ease-in-out;
             &::before {opacity: 0;}
             &::after {opacity: 1;}
 
