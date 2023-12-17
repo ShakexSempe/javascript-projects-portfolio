@@ -241,19 +241,19 @@ footer a {
     transform: rotate(0);
   }
 }
-.project-container .project-item:hover, .project-container .project-item:has(a:focus) {
+.project-container .project-item:hover {
   animation: card-hover 250ms;
 }
-.project-container .project-item:hover::before, .project-container .project-item:has(a:focus)::before {
+.project-container .project-item:hover::before {
   opacity: 0;
 }
-.project-container .project-item:hover::after, .project-container .project-item:has(a:focus)::after {
+.project-container .project-item:hover::after {
   opacity: 1;
 }
-.project-container .project-item:hover h2, .project-container .project-item:has(a:focus) h2 {
+.project-container .project-item:hover h2 {
   color: #000;
 }
-.project-container .project-item:hover figure img, .project-container .project-item:has(a:focus) figure img {
+.project-container .project-item:hover figure img {
   transform: rotate(0deg) scale(1);
   box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
 }

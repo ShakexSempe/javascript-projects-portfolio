@@ -124,7 +124,7 @@
 
         }
 
-        &:hover, &:has(a:focus) {
+        &:hover {
             animation: card-hover 250ms;
             &::before {opacity: 0;}
             &::after {opacity: 1;}
