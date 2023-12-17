@@ -18,6 +18,7 @@ body {
   font-family: "Content", serif;
   background-color: #111;
   color: #fff;
+  position: relative;
 }
 
 .hero {
@@ -94,6 +95,7 @@ body {
 }
 
 main {
+  position: relative;
   background-color: #0d0d0d;
   padding: 10vh 5vw;
   display: grid;
@@ -103,6 +105,18 @@ main {
 }
 @media (min-width: 768px) {
   main {
+    gap: 2rem;
+    row-gap: 20vh;
+  }
+}
+main #grid {
+  display: grid;
+  place-items: center;
+  gap: 10vh;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+@media (min-width: 768px) {
+  main #grid {
     gap: 2rem;
     row-gap: 20vh;
   }
@@ -130,12 +144,39 @@ footer a {
 .project-container .project-item {
   width: 100%;
   height: auto;
-  background: #1a1a1a;
+  background: black;
   padding: 1rem;
   border-radius: 0.25rem;
   box-shadow: 0 0.5rem 1rem #000;
-  transition: 0.25s;
+  transition: 250ms;
   margin-block: auto;
+  isolation: isolate;
+}
+.project-container .project-item::before, .project-container .project-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  z-index: -1;
+  transition: 250ms;
+}
+.project-container .project-item::before {
+  background: #333;
+}
+.project-container .project-item::after {
+  background: yellow;
+  z-index: -2;
+}
+@keyframes card-hover {
+  0%, 70%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  80% {
+    transform: scale(1.025);
+  }
 }
 @media (min-width: 768px) {
   .project-container .project-item {
@@ -143,11 +184,12 @@ footer a {
   }
 }
 .project-container .project-item h2 {
-  text-transform: capitalize;
   color: yellow;
   margin: 1rem 0;
+  text-transform: capitalize;
   font-size: 1.25rem;
   font-size: clamp(1.25rem, 2vw, 1.25rem);
+  transition: 250ms;
 }
 .project-container .project-item a {
   display: flex;
@@ -179,7 +221,7 @@ footer a {
   color: #cccc00;
 }
 .project-container .project-item figure {
-  height: 50vh;
+  height: 40vh;
   transition: 0.5s;
   position: relative;
 }
@@ -188,15 +230,8 @@ footer a {
   height: 100%;
   object-fit: cover;
   border-radius: 0.25rem;
-  transition: 0.5s;
-  transform: rotate(-5deg) scale(0.8);
-  box-shadow: 0rem 1rem 1rem rgba(255, 255, 0, 0.2);
-  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.5);
-}
-@media (min-width: 768px) {
-  .project-container .project-item figure img {
-    box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
-  }
+  transition: 125ms;
+  transform: rotate(-2deg) scale(0.8);
 }
 @media (min-width: 768px) {
   .project-container .project-item figure {
@@ -206,12 +241,21 @@ footer a {
     transform: rotate(0);
   }
 }
-.project-container .project-item:hover {
-  background: #333333;
+.project-container .project-item:hover, .project-container .project-item:has(a:focus) {
+  animation: card-hover 250ms;
 }
-.project-container .project-item:hover figure img {
-  transform: rotate(0deg) scale(0.95);
-  box-shadow: 0rem 0.5rem 0.25rem rgba(0, 0, 0, 0.3);
+.project-container .project-item:hover::before, .project-container .project-item:has(a:focus)::before {
+  opacity: 0;
+}
+.project-container .project-item:hover::after, .project-container .project-item:has(a:focus)::after {
+  opacity: 1;
+}
+.project-container .project-item:hover h2, .project-container .project-item:has(a:focus) h2 {
+  color: #000;
+}
+.project-container .project-item:hover figure img, .project-container .project-item:has(a:focus) figure img {
+  transform: rotate(0deg) scale(1);
+  box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,9 +2,21 @@
 
 // MAIN = PROJECTS GRID CONTAINER
 main {
+    position: relative;
     background-color: hsla(0, 0%, 5%);
     padding: 10vh 5vw;
     display: grid;
+    place-items: center;
+    gap: 10vh;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+    @media (min-width: 768px) {
+        gap: 2rem;
+        row-gap: 20vh;
+    }
+
+    #grid {
+        display: grid;
     place-items: center;
     gap: 10vh;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -13,7 +25,9 @@ main {
         gap: 2rem;
         row-gap: 20vh;
     }
+    }
 }
+
 
 footer {
     padding: 5vh 0;
