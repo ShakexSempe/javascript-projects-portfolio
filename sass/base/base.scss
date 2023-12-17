@@ -1,4 +1,4 @@
-@use '../abstracts/variables';
+@use '../abstracts';
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ html {
 
 }
 body {
-    font-family: variables.$font-content;
+    font-family: 'Content', serif;
     background-color: #111;
     color: #fff;
 }

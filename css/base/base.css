@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+@font-face {
+  font-family: "Content";
+  src: url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2");
+  font-weight: 100 1000;
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +15,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Content", serif;
   background-color: #111;
   color: #fff;
 }
