@@ -39,10 +39,10 @@
                 transform: scale(1);
             }
             50% {
-                transform: scale(1.05);
+                transform: scale(1.1);
             }
             80% {
-                transform: scale(1.025);
+                transform: scale(1.05);
             }
         }
 
@@ -58,7 +58,7 @@
             font-size: 1.25rem;
             font-size: clamp(1.25rem, 2vw, 1.25rem);
             
-            transition: 250ms;
+            transition: 350ms;
         }
 
         a {
@@ -103,7 +103,7 @@
                 height: 100%;
                 object-fit: cover;
                 border-radius: .25rem;
-                transition: 125ms;
+                transition: 250ms;
                 transform: rotate(-2deg) scale(.8);
                 // box-shadow: 0rem 1rem 1rem hsla(0, 0%, 0%, .5);
                 
@@ -125,7 +125,7 @@
         }
 
         &:hover {
-            animation: card-hover 250ms;
+            animation: card-hover 350ms;
             &::before {opacity: 0;}
             &::after {opacity: 1;}
 
